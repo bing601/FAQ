@@ -35,5 +35,5 @@ Route::patch('/questions/{question_id}/answer/{answer_id}', 'AnswerController@up
 Route::delete('/questions/{question_id}/answer/{answer_id}', 'AnswerController@destroy')->name('answers.destroy');
 
 Route::resources([
-    'question' => 'QuestionController',
+    'questions' => 'QuestionController',
 ]);
