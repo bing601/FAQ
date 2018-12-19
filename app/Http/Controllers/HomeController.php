@@ -28,9 +28,23 @@ class HomeController extends Controller
         $questions = $user->questions()->paginate(6);
         return view('home')->with('questions', $questions);
     }
+
     /** Return view to upload file */
     public function uploadFile()
     {
         return view('uploadfile');
+    }
+
+    /** Example of File Upload */
+    public function uploadFilePost(Request $request){
+        $request->validate([
+            'fileToUpload' => 'required|file|max:1024',
+        ]);
+
+        $request->fileToUpload->store('flies');
+
+        return back()
+            ->with('success','You have successfully upload image.');
+
     }
 }

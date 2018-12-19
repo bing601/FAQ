@@ -39,3 +39,5 @@ Route::resources([
 ]);
 
 Route::get('uploadfile','HomeController@uploadfile');
+
+Route::post('uploadfile','HomeController@uploadFilePost');
