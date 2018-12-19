@@ -1,8 +1,6 @@
 # FAQ
 
-To run the FAQ project:
+To run the FAQ feature project, please visit the heroku linkheroku link: https://faqbing.herokuapp.com/
 
-1. git clone https://github.com/bing601/FAQ.git
-2. CD into FAQ and run composer install 
-3. copy .env.example to .env
-4. setup database / with sqlite or other (https://laravel.com/docs/5.7/database)
+Userstories
+1. As a new user, after registration I can upload file from local computer in the homepage .
