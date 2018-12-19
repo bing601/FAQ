@@ -38,6 +38,6 @@ Route::resources([
     'questions' => 'QuestionController',
 ]);
 
-Route::get('uploadfile','HomeController@uploadfile');
+Route::get('uploadfile','HomeController@uploadfile')->name('uploadfile');
 
 Route::post('uploadfile','HomeController@uploadFilePost');

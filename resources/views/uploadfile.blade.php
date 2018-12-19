@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="card">
-                <div class="card-header">Upload File Example</div>
+                <div class="card-header">Upload File</div>
 
                 <div class="card-body">
                     @if ($message = Session::get('success'))

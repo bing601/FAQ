@@ -36,15 +36,15 @@ class HomeController extends Controller
     }
 
     /** Example of File Upload */
-    public function uploadFilePost(Request $request){
+    public function uploadFilePost(Request $request)
+    {
         $request->validate([
             'fileToUpload' => 'required|file|max:1024',
         ]);
 
-        $request->fileToUpload->store('flies');
-
+        $request->file('fileToUpload')->store('Uploadflies');
         return back()
-            ->with('success','You have successfully upload image.');
+            ->with('success', 'You have successfully upload image.');
 
     }
 }

@@ -40,14 +40,22 @@
                                         There are no questions to view, you can create a question
                                 @endforelse
                             </div>
-
                         </div>
                         <div class="card-footer">
                             <div class="float-right">
                                 {{ $questions->links() }}
                             </div>
                         </div>
+                    </div>
 
+                    <br>
+                    <div class="card">
+                        <div class="card-header">
+                            File Upload
+                        </div>
+                        <div class="card-body">
+                            <a href="{{route('uploadfile')}}" class="btn btn-primary">Ready to Upload</a>
+                        </div>
                     </div>
                 </div>
             </div>
