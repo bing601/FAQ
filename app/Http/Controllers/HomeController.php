@@ -41,10 +41,13 @@ class HomeController extends Controller
         $request->validate([
             'fileToUpload' => 'required|file|max:1024',
         ]);
+       // $file=$request->file('fileToUpload');
+        //dd($file);
+        $fileName = "fileName".time().'.'.request()->fileToUpload->getClientOriginalExtension();
+        $request->file('fileToUpload')->storeAs('Uploadflies',$fileName);
 
-        $request->file('fileToUpload')->store('Uploadflies');
         return back()
-            ->with('success', 'You have successfully upload image.');
+            ->with('success', 'You have successfully upload file.');
 
     }
 }
