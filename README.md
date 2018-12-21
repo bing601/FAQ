@@ -9,6 +9,8 @@ Userstories
 
 2. As a user, I want to upload a photo which is over 1m. The system will display error message and allow me to resubmit the photo.
 3. As a user, I can go to the contact us page and fill out the contact us form.
+4. As a user, if I go to the contact us page and forget to write in either of the field (name/email/message), 
+the system will display the notice to user. 
 
 
 
