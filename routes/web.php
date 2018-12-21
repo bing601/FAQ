@@ -41,3 +41,6 @@ Route::resources([
 Route::get('uploadfile','HomeController@uploadfile')->name('uploadfile');
 
 Route::post('uploadfile','HomeController@uploadFilePost');
+
+Route::get('/contact','ContactUsController@create');
+
