@@ -42,7 +42,7 @@ Route::get('uploadfile','HomeController@uploadfile')->name('uploadfile');
 
 Route::post('uploadfile','HomeController@uploadFilePost');
 
-Route::get('/contact','ContactUsController@create');
+Route::get('/contact','ContactUsController@create')->name('contact');
 
 Route::post('/contact',
     ['as'=>'contact.store','uses'=>'ContactUsController@store']);

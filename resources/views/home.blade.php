@@ -57,6 +57,15 @@
                             <a href="{{route('uploadfile')}}" class="btn btn-primary">Ready to Upload</a>
                         </div>
                     </div>
+                    <br>
+                    <div class="card">
+                        <div class="card-header">
+                            Contact Us
+                        </div>
+                        <div class="card-body">
+                            <a href="{{route('contact')}}" class="btn btn-primary">Feel Free to Contact Us</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
