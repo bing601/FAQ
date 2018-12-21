@@ -10,4 +10,12 @@ class ContactUsController extends Controller
     {
         return view('contactus');
     }
+    public function store(Request $request)
+    {
+        $this->validate($request,[
+            'name'=>'required',
+            'email'=>'required|email',
+            'message'=>'required'
+        ]);
+    }
 }
